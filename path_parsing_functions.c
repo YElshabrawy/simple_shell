@@ -15,7 +15,7 @@ int isExe(info_t *info, char *path)
 	if (!path || stat(path, &st))
 		return (0);
 
-	if (st.st_mode & S_IXUSR)
+	if (st.st_mode & S_IFREG)
 	{
 		return (1);
 	}
