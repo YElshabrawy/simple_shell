@@ -17,7 +17,7 @@ int myshell(info_t *info, char **av)
 	{
 		clear_info(info);
 		if (isInteractive(info))
-			_puts("$ ");
+			_puts(INTERACTIVE_PREFIX);
 		_eputchar(BUF_FLUSH);
 		r = get_input(info);
 		if (r != -1)

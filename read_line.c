@@ -120,7 +120,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 void sigintHandler(int sig_num)
 {
 	_puts("\n");
-	_puts("$ ");
+	_puts(INTERACTIVE_PREFIX);
 	_putchar(BUF_FLUSH);
 	(void) sig_num;
 }

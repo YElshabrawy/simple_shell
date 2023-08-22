@@ -17,6 +17,7 @@
 #define BUF_FLUSH -1
 
 #define NULL_STRING "(nil)"
+#define INTERACTIVE_PREFIX "($) "
 
 #define CONVERT_LOWERCASE	1
 #define CONVERT_UNSIGNED	2
